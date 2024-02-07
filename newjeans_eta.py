@@ -12,7 +12,7 @@ class eta:
 
 
     def Nominal(self):
-        col_value = self.df[self.col_name].unique().tolist()
+        col_value = self.df[self.col_name].unique()
         col_value.sort()
 
         # Exited == 1
@@ -50,6 +50,7 @@ class eta:
 
         return df0_col_rate, df0_in_col_rate, df1_col_rate, df1_in_col_rate
 
+    # for으로 수정 예정
     def Discrete(self):
         # mean Exited == 1
         df1_mean_low_rate = 0
