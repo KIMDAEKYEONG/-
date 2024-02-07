@@ -12,8 +12,8 @@ class eta:
 
 
     def Nominal(self):
-        col_value = self.df[self.col_name].unique()
-        #col_value = col_value.sort()
+        col_value = self.df[self.col_name].unique().tolist()
+        col_value.sort()
 
         # Exited == 1
         df1_in_col_rate = []
